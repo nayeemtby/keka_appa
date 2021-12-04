@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'home.dart';
 
-void main(List<String> args) {
+void main() {
   runApp(const KekaAppa());
 }
 
