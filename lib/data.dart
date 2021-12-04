@@ -1,4 +1,10 @@
-Map<String, String> catName = {};
+Map<String, String> catName = {
+  "bread": "Bread",
+  "dessert": "Desert",
+  "fast_food": "Fast Food",
+  "rice": "Rice",
+  "non_veg": "Non-Veg"
+};
 Map<String, dynamic> bdfood = {
   "bread": [
     {

@@ -110,7 +110,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
           children: [
             const Text("Details"),
             Text(
-              "Category: " + widget.cat.toUpperCase(),
+              "Category: " + catName[widget.cat]!,
               style: const TextStyle(fontSize: 16),
             ),
           ],
@@ -247,9 +247,18 @@ class _DetailsScreenState extends State<DetailsScreen> {
                           for (var i = 0;
                               i < widget.data["ingredients"].length;
                               i++)
-                            Text(
-                              "\u2022 " + widget.data["ingredients"][i],
-                              style: const TextStyle(fontSize: 18),
+                            Row(
+                              children: [
+                                const Text(
+                                  "\u2022 ",
+                                  style: TextStyle(
+                                      color: Colors.red, fontSize: 28),
+                                ),
+                                Text(
+                                  widget.data["ingredients"][i],
+                                  style: const TextStyle(fontSize: 18),
+                                ),
+                              ],
                             )
                         ],
                       ),
